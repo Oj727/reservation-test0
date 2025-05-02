@@ -1,0 +1,26 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <title>予約カレンダー</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>今週の予約</h1>
+  <div id="calendar"></div>
+  <button onclick="nextWeek()">▶ 来週</button>
+
+  <!-- モーダル（予約） -->
+  <div id="modal" class="hidden">
+    <div class="modal-content">
+      <p id="modal-time"></p>
+      <input type="text" id="name" placeholder="名前を入力" />
+      <button onclick="reserve()">予約する</button>
+      <button onclick="closeModal()">閉じる</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
